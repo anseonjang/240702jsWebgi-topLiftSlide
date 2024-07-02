@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 조건문, 배열, </title>
+</head>
+
+<body>
+    <script>
+        /* ============================
+            조건문 - if문 - 조건이 참일때만 실행 
+            if(조건식) {
+            실행문;
+            }
+        ==============================*/
+
+        var e = 10;
+        var f = 20;
+        var g = 30;
+        if(e > f){
+            document.write("e가 f보다 큼");
+        } else if(f > g) {
+            document.write("f가 g보다 큼");
+        } else {
+            document.write("어쩌라구? T T "); 
+        }
+        // else if - 두번째 조건 평가 
+
+        /* ============================
+            배열 - 하나의 변수에 여러개의 데이터 저장 가능
+            (자바스크립트는 첫번째 요소가 무조건 : 0) 
+        ==============================*/
+
+        var fruits = ["블루베리", "딸기", "바나나"]; // 0, 1, 2
+        document.write("<br><br>" + fruits[0]);
+    
+    
+    // 첫번째 변수가 문자열일경우 뒤의 내용은 모두 문자열이 됨.
+    // var time1 = "현재 시간은 ";
+    var time2 = 1;
+    var time3 = 2;
+    var time4 = "시입니다.";
+    var time = time2 + time3 + time4;
+    document.write("<br><br>" + time);
+    
+       /* ============================
+            대입 할당연산자 = 대입연산자
+            +=, -=, *=, /=, %= 
+        ==============================*/
+ 
+        var num1 = 10; 
+        var num2 = 20; 
+
+        num1 += 5; 
+        document.write("<br><br>" + num1 + "<br>"); // 15 
+
+        num1 -= 5; 
+        document.write("<br><br>" + num1 + "<br>"); // 10 
+
+        num1 *= 5; 
+        document.write("<br><br>" + num1 + "<br>"); // 50 
+
+        num1 /= 5; 
+        document.write("<br><br>" + num1 + "<br>"); // 10 
+
+        num2 %= 3; 
+        document.write("<br><br>" + num2 + "<br>"); // 2 
+
+    </script>
+</body>
+
+</html>
